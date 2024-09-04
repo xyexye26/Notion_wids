@@ -1,1 +1,183 @@
-save
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+  <link href="./css/thumbnail-gallery.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #191919 !important;
+    }
+
+    .tz-gallery {
+      padding: 40px;
+    }
+
+    .tz-gallery .thumbnail {
+      padding: 0;
+      margin-bottom: 30px;
+      background-color: transparent;
+      border-radius: 4px;
+      border: none;
+      transition: 0.15s ease-in-out;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    }
+
+    .tz-gallery .thumbnail img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .tz-gallery .thumbnail:hover {
+      transform: translateY(-10px) scale(1.02);
+    }
+
+    .baguetteBox-button {
+      background-color: transparent !important;
+    }
+
+    /* Custom scrollbar styling */
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: rgba(25, 25, 25, 0.7); /* Color with lower opacity */
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #191919; /* Fully opaque color on hover */
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: transparent; /* Or any background color you want */
+    }
+
+    /* Make sure arrows and close button are visible and well-sized */
+    .baguetteBox-button {
+      font-size: 1.5rem;
+      color: white !important;
+    }
+
+    /* Ensure gallery row doesn't break unexpectedly */
+    .tz-gallery .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .tz-gallery .col-sm-6.col-md-4 {
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <main>
+
+    <section id="gallery">
+      <div class="gallery-container container">
+        <div class="tz-gallery">
+
+          <div class="row">
+
+            <!-- Image Items -->
+            <div data-aos="flip-up" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="1.jpg">
+                  <img src="1.jpg" alt="Image 1">
+                </a>
+              </div>
+            </div>
+
+            <div data-aos="flip-up" data-aos-delay="20" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="2.jpg">
+                  <img src="2.jpg" alt="Image 2">
+                </a>
+              </div>
+            </div>
+
+            <div data-aos="flip-up" data-aos-delay="40" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="3.jpg">
+                  <img src="3.jpg" alt="Image 3">
+                </a>
+              </div>
+            </div>
+
+            <div data-aos="flip-up" data-aos-delay="60" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="4.jpg">
+                  <img src="4.jpg" alt="Image 4">
+                </a>
+              </div>
+            </div>
+
+            <div data-aos="flip-up" data-aos-delay="80" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="5.jpg">
+                  <img src="5.jpg" alt="Image 5">
+                </a>
+              </div>
+            </div>
+
+            <div data-aos="flip-up" data-aos-delay="100" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="6.jpg">
+                  <img src="6.jpg" alt="Image 6">
+                </a>
+              </div>
+            </div>
+
+            <div data-aos="flip-up" data-aos-delay="120" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="7.jpg">
+                  <img src="7.jpg" alt="Image 7">
+                </a>
+              </div>
+            </div>
+
+            <div data-aos="flip-up" data-aos-delay="140" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="8.jpg">
+                  <img src="8.jpg" alt="Image 8">
+                </a>
+              </div>
+            </div>
+
+            <div data-aos="flip-up" data-aos-delay="160" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="9.jpg">
+                  <img src="9.jpg" alt="Image 9">
+                </a>
+              </div>
+            </div>
+            <!-- End of Image Items -->
+
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script>
+        baguetteBox.run('.tz-gallery');
+      </script>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>
