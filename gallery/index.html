@@ -8,10 +8,8 @@
   <link href="./css/thumbnail-gallery.css" rel="stylesheet" />
 
   <style>
-    /* General background color */
     body {
-      background-color: #191919;
-      color: #fff; /* Text color for better visibility on dark background */
+      background-color: #191919 !important;
     }
 
     .tz-gallery {
@@ -36,90 +34,128 @@
       background-color: transparent !important;
     }
 
-    /* Scrollbar styling */
-    ::-webkit-scrollbar {
-      width: 12px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: #191919;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background-color: #444;
-      border-radius: 20px;
-      border: 3px solid #191919;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background-color: #555;
-    }
-
-    /* Arrow styling for sliders/carousels */
-    .slider-arrow {
-      width: 50px;
-      height: 50px;
-      background-color: #444;
-      color: #fff;
-      border-radius: 50%;
-      border: none;
-    }
-
-    .slider-arrow:hover {
-      background-color: #555;
-    }
-
-    .slider-arrow svg {
-      width: 30px;
-      height: 30px;
+    .carousel-inner>.item>a>img,
+    .carousel-inner>.item>img,
+    .img-responsive,
+    .thumbnail a>img,
+    .thumbnail>img {
+      display: block;
+      max-width: 100%;
+      height: auto;
     }
   </style>
+
 </head>
 
 <body>
-  <div style="background-color: #191919; padding: 40px;">
-    <main>
-      <section id="gallery">
-        <div class="gallery-container container">
-          <div class="tz-gallery">
-            <div class="row">
-              <!-- Example image thumbnails -->
-              <div data-aos="flip-up" class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                  <a class="lightbox" href="1.jpg">
-                    <img src="1.jpg">
-                  </a>
-                </div>
-              </div>
 
-              <div data-aos="flip-up" data-aos-delay="20" class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                  <a class="lightbox" href="2.jpg">
-                    <img src="2.jpg">
-                  </a>
-                </div>
-              </div>
 
-              <div data-aos="flip-up" data-aos-delay="40" class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                  <a class="lightbox" href="3.jpg">
-                    <img src="3.jpg">
-                  </a>
-                </div>
-              </div>
+  <main>
 
-              <!-- Add more images as needed -->
+
+    <section id="gallery">
+      <div class="gallery-container container">
+        <div class="tz-gallery">
+
+          <div class="row">
+
+            <!---------------------------------------------->
+            <div data-aos="flip-up" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="1.jpg">
+                  <img src="1.jpg">
+                </a>
+              </div>
             </div>
+
+            <!---------------------------------------------->
+
+            <div data-aos="flip-up" data-aos-delay="20" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="2.jpg">
+                  <img src="2.jpg">
+                </a>
+              </div>
+            </div>
+            <!---------------------------------------------->
+
+            <div data-aos="flip-up" data-aos-delay="40" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="3.jpg">
+                  <img src="3.jpg">
+                </a>
+
+              </div>
+            </div>
+            <!---------------------------------------------->
+
+            <div data-aos="flip-up" data-aos-delay="60" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="4.jpg">
+                  <img src="4.jpg">
+                </a>
+              </div>
+            </div>
+            <!---------------------------------------------->
+
+            <div data-aos="flip-up" data-aos-delay="80" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="5.jpg">
+                  <img src="5.jpg">
+                </a>
+              </div>
+            </div>
+            <!---------------------------------------------->
+
+            <div data-aos="flip-up" data-aos-delay="100" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="6.jpg">
+                  <img src="6.jpg">
+                </a>
+              </div>
+            </div>
+            <!---------------------------------------------->
+
+            <div data-aos="flip-up" data-aos-delay="120" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="7.jpg">
+                  <img src="7.jpg">
+                </a>
+              </div>
+            </div>
+            <!---------------------------------------------->
+
+            <div data-aos="flip-up" data-aos-delay="140" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="8.jpg">
+                  <img src="8.jpg">
+                </a>
+              </div>
+            </div>
+            <!---------------------------------------------->
+
+            <div data-aos="flip-up" data-aos-delay="160" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="9.jpg">
+                  <img src="9.jpg">
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
-      </section>
-    </main>
-  </div>
+      </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-  <script>
-    baguetteBox.run('.tz-gallery');
-  </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script>
+        baguetteBox.run('.tz-gallery');
+      </script>
+
+    </section>
+
+  </main>
+
 </body>
 
 </html>
+
