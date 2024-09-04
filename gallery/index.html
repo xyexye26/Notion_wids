@@ -30,43 +30,56 @@
       transform: translateY(-10px) scale(1.02);
     }
 
-    .baguetteBox-button {
-      background-color: transparent !important;
-    }
-
-    .carousel-inner>.item>a>img,
-    .carousel-inner>.item>img,
-    .img-responsive,
-    .thumbnail a>img,
-    .thumbnail>img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-    }
-
     /* Adjust the size of the close button */
     .baguetteBox-button.close {
-      font-size: 1rem; /* Change this value as needed */
+      font-size: 1.5rem; /* Change this value as needed */
+      background-color: transparent !important;
+      color: white !important; /* Change the close button color */
     }
 
     /* Adjust the size of the left arrow button */
     .baguetteBox-button.previous {
-      font-size: 1rem; /* Change this value as needed */
+      font-size: 1.5rem; /* Change this value as needed */
+      background-color: transparent !important;
+      color: white !important; /* Change the arrow color */
     }
 
     /* Adjust the size of the right arrow button */
     .baguetteBox-button.next {
-      font-size: 1rem; /* Change this value as needed */
-      
+      font-size: 1.5rem; /* Change this value as needed */
+      background-color: transparent !important;
+      color: white !important; /* Change the arrow color */
+    }
+
     /* Optionally, adjust padding and margins to make buttons more compact */
     .baguetteBox-button {
       padding: 5px; /* Adjust padding */
       margin: 5px;  /* Adjust margin */
+      border: none !important; /* Remove any border */
+      box-shadow: none !important; /* Remove any box-shadow */
     }
 
     /* Change the background color of the slider */
     .baguetteBox-overlay {
       background-color: #191919 !important;
+    }
+
+    /* Custom scrollbar styling */
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: rgba(25, 25, 25, 0.7); /* Color with lower opacity */
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #191919; /* Fully opaque color on hover */
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: transparent; /* Or any background color you want */
     }
   </style>
 
